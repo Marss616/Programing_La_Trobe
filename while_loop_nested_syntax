@@ -1,0 +1,7 @@
+a = 1
+while a <= 12:
+    b = 1
+    while b <= 12:
+        print(str(a) + ' x ' + str(b) + ' = ' + str(a * b))
+        b = b + 1
+    a = a + 1
