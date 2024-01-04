@@ -5,6 +5,5 @@
 # of      on      to
 
 
-a = input("input please: ")
-
-print(a)
+sentance = input("input please: ")
+dont_count_set = ("a", "an", "the", "as", "by", "for", "in", "of", "on", "to")
