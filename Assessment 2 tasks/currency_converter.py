@@ -1,27 +1,11 @@
-def currency_converter():
-    # Dictionary of conversion rates
-    conversion_rates = {
-        "EUR": 0.59,
-        "USD": 0.64,
-        "CAD": 0.87,
-        "NZD": 1.08,
-        # Two additional currencies
-        "GBP": 0.53,  # Example rate for British Pound
-        "JPY": 93.17  # Example rate for Japanese Yen
-    }
 
-    # User input for amount in AUD
-    amount_aud = float(input("Enter an amount in AUD: "))
+rates = {"EUR": 0.59, "USD": 0.64, "CAD": 0.87, "NZD": 1.08, } # define the conversion rates 
 
-    # User input for target currency
-    currency = input("Enter a currency: ").upper()
+amount = float(input("Enter an amount in AUD (Case Sensitive): ")) # take input of amount to convert
+currency = input("Enter currency to convert to (EUR, USD, CAD, NZD): ") # get users desired currency converter
 
-    # Conversion
-    if currency in conversion_rates:
-        converted_amount = amount_aud * conversion_rates[currency]
-        print(f"{converted_amount:.2f} {currency}")
-    else:
-        print("Currency not supported.")
-
-# Run the program
-currency_converter()
+if currency in rates:
+    converted_amount = amount * rates[currency] # Calculate the answer
+    print(f"That iss: {converted_amount} {currency}.") # Format and print the answer to the end user
+else:
+    print("Invalid currency.") # Let user know if they inputed a bad currency,
