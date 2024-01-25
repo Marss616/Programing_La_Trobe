@@ -1,12 +1,13 @@
+# Define the function
 def password_check(password):
-    if len(password) < len('########'):
-        # Your logic here (e.g., print a message or take some action)
-        print("Password is too short.")
+    if len(password) < 8:
+        return "Password is too short."
+    elif len(password) > 20:
+        return "Password is too long."
     else:
-        # Logic for when the password length is sufficient
-        print("Password length is sufficient.")
+        return "Password length is acceptable."
 
-
-password_input = str(input("what is the password"))
-
-password_check(password_input)
+# Example usage
+input_password = input("What is your password: ")
+result = password_check(input_password)
+print(result)
