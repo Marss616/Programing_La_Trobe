@@ -20,3 +20,4 @@ user_input_size = int(input("Enter a size to make your box: ")) # get the users 
 
 draw_big_x(user_input_char, user_input_size) # call the 'draw_big_x' function with the user input for the character and size, and display in console
 
+# test
