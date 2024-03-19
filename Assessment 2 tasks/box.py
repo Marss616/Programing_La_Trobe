@@ -14,7 +14,7 @@ def draw_big_x(character, size): # create the function for the big x to be calle
         line[right_position] = character # set the character at the 'right' position for the 'X' with the size of the box, this will provide the right padding
         print("".join(line)) # print the line to the console for user feedback.
 
-user_input_char = input("Enter a char to make your box: ") # get the users input for the character to be used for the 'draw_big_x' function
+user_input_char = str(input("Enter a char to make your box: ")) # get the users input for the character to be used for the 'draw_big_x' function
 user_input_size = int(input("Enter a size to make your box: ")) # get the users input for the size to be used for the 'draw_big_x' function
 
 
